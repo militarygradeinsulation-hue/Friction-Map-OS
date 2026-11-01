@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+/* Import fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+:root {
+  --black: #000;
+  --ink: #111;
+  --btn: #383838;
+  --white: #fff;
+  --glass: rgba(255, 255, 255, 0.06);
+  --grid: rgba(255, 255, 255, 0.2);
+  --tick: rgba(255, 255, 255, 0.5);
+  --muted: #9a9a9a;
+  --dim: #6b6b6b;
+  --line: rgba(255, 255, 255, 0.1);
+  --surface: #0a0a0a;
+  --surface2: #121212;
+  --display: "Anton", sans-serif;
+  --sans: "Inter", sans-serif;
+  --mono: "JetBrains Mono", monospace;
+  --pad: clamp(16px, 3.2vw, 40px);
+}
+
+body {
+  margin: 0;
+  background: var(--black);
+  color: var(--white);
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Skeuomorphic Button */
+.btn-skeu {
+  --c: rgba(255, 255, 255, 0.7);
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 22px;
+  border-radius: 6px;
+  background: var(--btn);
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 0;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: inset 0 -1px 1px #000, inset 0 -8px 2px #0f0f0f, inset 0 1px 1px rgba(0, 0, 0, 0.5), inset 0 2px 0 rgba(255, 255, 255, 0.14), 0 0 0 1px #000, 0 10px 24px -10px rgba(0, 0, 0, 0.7);
+  transition: transform 0.2s, box-shadow 0.3s, background 0.3s;
+}
+
+.btn-skeu:hover {
+  background: #424242;
+  box-shadow: inset 0 -1px 1px #000, inset 0 -8px 2px #0f0f0f, inset 0 1px 1px rgba(0, 0, 0, 0.5), inset 0 2px 0 rgba(255, 255, 255, 0.2), 0 0 0 1px #000, 0 0 24px rgba(255, 255, 255, 0.18), 0 14px 30px -10px rgba(0, 0, 0, 0.8);
+}

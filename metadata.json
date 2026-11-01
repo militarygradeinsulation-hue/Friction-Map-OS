@@ -1,0 +1,6 @@
+{
+  "name": "FrictionMap OS",
+  "description": "The Business Friction Intelligence Platform that scans industries, companies, or websites to reveal hidden operational friction.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
